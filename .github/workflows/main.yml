@@ -11,4 +11,7 @@ jobs:
         with:
           MY_NAME: "Mona"
       - name: "echo"
-        run: echo "Aman is the best"
+        run: |
+          echo "Starting python install"
+          apt install python3
+          python3 --version
