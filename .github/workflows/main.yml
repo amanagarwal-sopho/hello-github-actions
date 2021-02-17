@@ -6,12 +6,7 @@ jobs:
     name: Hello world action
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: ./action-a
-        with:
-          MY_NAME: "Mona"
-      - name: "echo"
+      - name: "Check Python Version"
         run: |
-          echo "Starting python install"
-          apt install python3
-          python3 --version
+          echo "Checking Python Version"
+          python --version
